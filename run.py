@@ -21,6 +21,8 @@ class GameController(object):
         self.background_flash = None
         self.clock = pygame.time.Clock()
         self.fruit = None
+        self.title = pygame.display.set_caption("Original PacMan By Florian")
+        self.icon = pygame.display.set_icon(pygame.image.load('img/logo.png'))
         self.pause = Pause(True)
         self.level = 0
         self.lives = 5
